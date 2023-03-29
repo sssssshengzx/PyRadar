@@ -254,7 +254,7 @@ class Radar:
         mlab.show()
 
     def grid(self):
-        GRID_RESOLUTION = 500  # 网格分辨率，可修改
+        GRID_RESOLUTION = 500  # 网格分辨率，可修改 。
         
         x, y, z, r = self.x, self.y, self.z, self.r
         grid_x, grid_y, grid_z = np.mgrid[min(x):max(x):GRID_RESOLUTION*1j, min(y):max(y):GRID_RESOLUTION*1j, min(z):max(z):GRID_RESOLUTION*1j]  # 构建三维网格，方形，体绘制适用
